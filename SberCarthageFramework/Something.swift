@@ -5,10 +5,10 @@
 //  Created by Nikolai Sokol on 09.06.2021.
 //
 
-import Foundation
+import UIKit
 
-class Something {
-    func makeSomething() {
-        print("Oh! That works")
+open class Something: UIViewController {
+    public func changeBackgroundColorColor(_ color: UIColor) {
+        view.backgroundColor = color
     }
 }
