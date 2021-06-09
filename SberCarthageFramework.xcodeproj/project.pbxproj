@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		609786C12670CD6E00903691 /* SberCarthageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 609786BF2670CD6E00903691 /* SberCarthageFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		609786C82670CF8B00903691 /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609786C72670CF8B00903691 /* Something.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		609786BC2670CD6E00903691 /* SberCarthageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SberCarthageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		609786BF2670CD6E00903691 /* SberCarthageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SberCarthageFramework.h; sourceTree = "<group>"; };
 		609786C02670CD6E00903691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609786C72670CF8B00903691 /* Something.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Something.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				609786BF2670CD6E00903691 /* SberCarthageFramework.h */,
+				609786C72670CF8B00903691 /* Something.swift */,
 				609786C02670CD6E00903691 /* Info.plist */,
 			);
 			path = SberCarthageFramework;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					609786BB2670CD6E00903691 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609786C82670CF8B00903691 /* Something.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,8 @@
 		609786C52670CD6E00903691 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JCV48HS79W;
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Sokol.SberCarthageFramework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,8 @@
 		609786C62670CD6E00903691 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JCV48HS79W;
